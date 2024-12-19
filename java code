@@ -1,0 +1,49 @@
+// Post Class
+class Post {
+    String content;
+    String author;
+
+    // Constructor
+    public Post(String content, String author) {
+        this.content = content;
+        this.author = author;
+    }
+
+    // Method to display post details
+    public void displayPost() {
+        System.out.println(author + " says: " + content);
+    }
+}
+
+// Profile Class
+class Profile {
+    String username;
+    String bio;
+
+    // Constructor
+    public Profile(String username, String bio) {
+        this.username = username;
+        this.bio = bio;
+    }
+
+    // Method to display profile details
+    public void displayProfile() {
+        System.out.println("Username: " + username);
+        System.out.println("Bio: " + bio);
+    }
+}
+
+// Main Class (renamed from SocialMediaPlatform to Main)
+public class Main {
+    public static void main(String[] args) {
+        // Create a Profile
+        Profile profile1 = new Profile("Asylkhan Kozhanov", "Hello, I am Asylkhan!");
+
+        // Create a Post
+        Post post1 = new Post("This is my first post!", "Asylkhan Kozhanov");
+
+        // Display Profile and Post
+        profile1.displayProfile();
+        post1.displayPost();
+    }
+}
